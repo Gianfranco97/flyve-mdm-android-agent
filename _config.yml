@@ -1,7 +1,6 @@
 email: ml-flyvemdm@teclib.com
 baseurl: "/flyve-mdm-android-agent" 
 url: "https://flyve-mdm.github.io" 
-  
 
 # Build settings
 markdown: kramdown
@@ -10,6 +9,18 @@ plugins:
   - jekyll-github-metadata
 
 repository: flyve-mdm/flyve-mdm-android-agent
+
+defaults:
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: page
+
+collections:
+  docs:
+    layout: page
+    output: true
 
 prose:
 
